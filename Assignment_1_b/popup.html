@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Screen Writer</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .control-group {
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .tool-btn {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .active {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="control-group">
+    <label>Drawing Tools:</label>
+    <button id="pen" class="tool-btn active">Pen</button>
+    <button id="eraser" class="tool-btn">Eraser</button>
+    <button id="square" class="tool-btn">Square</button>
+    <button id="rectangle" class="tool-btn">Rectangle</button>
+    <button id="circle" class="tool-btn">Circle</button>
+  </div>
+
+  <div class="control-group">
+    <label for="color">Color:</label>
+    <input type="color" id="color" value="#000000">
+  </div>
+
+  <div class="control-group">
+    <label for="size">Size:</label>
+    <input type="range" id="size" min="1" max="50" value="5">
+    <span id="sizeValue">5px</span>
+  </div>
+
+  <div class="control-group">
+    <button id="clear" class="tool-btn">Clear All</button>
+    <button id="toggleDraw" class="tool-btn">Start Drawing</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html> 

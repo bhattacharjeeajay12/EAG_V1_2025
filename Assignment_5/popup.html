@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math GUI Agent</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #result {
+      margin-top: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      min-height: 50px;
+      white-space: pre-wrap;
+      background-color: #f9f9f9;
+      font-family: monospace;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+    .loading {
+      display: none;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .tool-output {
+      margin: 10px 0;
+      padding: 10px;
+      border-left: 4px solid #4CAF50;
+      background-color: #f1f1f1;
+    }
+    .error {
+      border-left-color: #f44336;
+    }
+    .success {
+      border-left-color: #4CAF50;
+    }
+    .log-entry {
+      margin: 5px 0;
+      padding: 5px;
+      border-left: 3px solid #2196F3;
+      background-color: #e3f2fd;
+    }
+    .log-info {
+      border-left-color: #2196F3;
+    }
+    .log-error {
+      border-left-color: #f44336;
+    }
+    .log-warning {
+      border-left-color: #FFC107;
+    }
+    .summary {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #e8f5e9;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Math GUI Agent Interface</h2>
+    <textarea id="query" placeholder="Enter your mathematical or GUI operation query here..."></textarea>
+    <button id="submit">Submit Query</button>
+    <div id="loading" class="loading">Processing...</div>
+    <div id="result"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

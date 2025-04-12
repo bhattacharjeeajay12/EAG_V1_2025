@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Math Agent Extension",
+  "version": "1.0",
+  "description": "A Chrome extension that processes math queries using an AI agent",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "host_permissions": [
+    "https://*.googleapis.com/*"
+  ]
+} 

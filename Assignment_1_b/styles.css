@@ -1,0 +1,29 @@
+.screen-writer-canvas {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  pointer-events: none;
+  z-index: 2147483647 !important;
+  touch-action: none;
+  background: transparent;
+}
+
+.screen-writer-canvas.active {
+  pointer-events: auto !important;
+  cursor: crosshair !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+/* Prevent text selection on the page when drawing is active */
+body.drawing-active {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  cursor: crosshair !important;
+} 
