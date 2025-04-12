@@ -1,6 +1,6 @@
 __pycache__/
 .env
-Ass*/.env
+Assignment_*/.env
 *.log
 *.pyc
 *.sqlite3
