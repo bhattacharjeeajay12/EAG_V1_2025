@@ -39,7 +39,7 @@ class LLMProvider:
     def __init__(
         self,
         api_key: Optional[str] = None,
-        model: str = os.getenv("OPENAI_MODEL"), #"gpt-4o"
+        model: str = os.getenv("OPENAI_MODEL"),
         verify_ssl: bool = False,
     ):
         """
