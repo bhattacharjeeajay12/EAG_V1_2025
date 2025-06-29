@@ -50,6 +50,7 @@ class LLMProvider:
             model: The model to use for completions.
             verify_ssl: Whether to verify SSL certificates. Set to False to bypass SSL verification.
         """
+
         self.api_key = api_key or os.getenv("OPENAI_SECRET_KEY")
         if not self.api_key:
             raise ValueError(
