@@ -248,11 +248,10 @@ def test_perception_chain(
 if __name__ == "__main__":
     # Demo queries to test the perception chain
     test_queries = [
-        "I want to search for flights from New York to Los Angeles on 2025-05-01 with return on 2025-05-05",
-        "I need a hotel in Los Angeles for 2 adults from May 1 to May 5, 2025",
-        "I want to search for flights from New York to Los Angeles on 2025-05-01 "
-        "with return on 2025-05-05 and a hotel for 2 adults in Los Angeles for the same dates",
+        "I want to search for flights from New York to Los Angeles on 2025-07-25 with return on 2025-08-12",
+        "I need a hotel in Los Angeles for 2 adults from July 25 to August 8, 2025",
+        "I want to search for flights from New York to Los Angeles on 2025-07-25 with return on 2025-08-012 and a hotel for 2 adults in Los Angeles for the same dates",
     ]
 
     # Run the test
-    test_perception_chain(test_queries, "travel-session")
+    test_perception_chain(test_queries, "travel-session") # In real scenario, the perception comes after memory object has been created. memory object has a conversation id. travel-seesion is the conversation id

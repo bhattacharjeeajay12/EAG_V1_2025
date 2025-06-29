@@ -91,6 +91,7 @@ async def analyze_query(query: str, chat_history=None) -> Optional[str]:
 
     # print(f"The chat history is: {chat_history}")
 
+    # todo: here this quick check part is manual, can be automated using LLM.
     # Quick check if this is likely a travel query before running full perception
     travel_keywords = [
         "flight",
