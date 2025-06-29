@@ -25,8 +25,8 @@ from llm_provider import default_llm
 llm = default_llm.chat_model
 
 # Server parameters
-# server_params = StdioServerParameters(command="python", args=["server/server.py"])
-server_params = StdioServerParameters(command=sys.executable, args=["server/server_generic.py"])
+
+server_params = StdioServerParameters(command=sys.executable, args=["server/server.py"])
 
 """
 Architecture Overview:
