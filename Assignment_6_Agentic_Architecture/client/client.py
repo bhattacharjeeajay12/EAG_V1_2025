@@ -26,7 +26,7 @@ llm = default_llm.chat_model
 
 # Server parameters
 # server_params = StdioServerParameters(command="python", args=["server/server.py"])
-server_params = StdioServerParameters(command=sys.executable, args=["server/server.py"])
+server_params = StdioServerParameters(command=sys.executable, args=["server/server_generic.py"])
 
 """
 Architecture Overview:
@@ -169,13 +169,13 @@ async def run_conversation():
     """Run a conversation with multiple queries, maintaining chat history."""
     # List of example queries to process in sequence
     queries = [
-        "I want to search for flights from New York to Los Angeles on 2025-05-01 with return on 2025-05-05",
-        # "What about booking a hotel for the same dates and same destination?",
-        # "What is the capital of France?",
-        # "I want to book hotel in New York for 2 nights starting on 2025-05-01 to 2025-05-05 for 2 adults",
-        # "What about booking a return flight for the same dates?",
-        # "I want to search for flights from New York to Los Angeles on 2025-05-01 "
-        # "with return on 2025-05-05 and a hotel for 2 adults in Los Angeles for the same dates",
+        "I want to search for flights from New York to Los Angeles on 2025-07-25 with return on 2025-08-12",
+        "What about booking a hotel for the same dates and same destination?",
+        "What is the capital of France?",
+        "I want to book hotel in New York for 18 nights starting on 2025-07-25 to 2025-08-12 for 2 adults",
+        "What about booking a return flight for the same dates?",
+        "I want to search for flights from New York to Los Angeles on 2025-07-25 "
+        "with return on 2025-08-12 and a hotel for 2 adults in Los Angeles for the same dates",
     ]
 
     # Initialize conversation memory with a unique ID

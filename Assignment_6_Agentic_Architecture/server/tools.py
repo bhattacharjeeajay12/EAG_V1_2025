@@ -3,7 +3,8 @@ import os
 from dotenv import load_dotenv
 from loguru import logger
 import math
-
+import json
+from udf import get_search_from_cache, add_search_in_cache
 load_dotenv()
 
 if not os.getenv("SERP_API_KEY"):
@@ -92,8 +93,16 @@ def search_flights(
         params["return_date"] = return_date
 
     try:
-        search = GoogleSearch(params)
-        results = search.get_dict()
+
+        # to save number of tims the API is hit, we have kept some examples saved
+        key = "_".join(
+            [params.get("engine"), params.get("departure_id"), params.get("arrival_id"), params.get("outbound_date"),
+             return_date if return_date is not None else "RETURN-NA"])
+        results = get_search_from_cache(key)
+        if results == "":
+            search = GoogleSearch(params)
+            results = search.get_dict()
+            add_search_in_cache(key, results)
 
         # logger.info(f"whole results: {results}")
 
@@ -340,8 +349,13 @@ def search_hotels(location, check_in_date, check_out_date, adults=1, currency="U
     }
 
     try:
-        search = GoogleSearch(params)
-        results = search.get_dict()
+        # to save number of tims the API is hit, we have kept some examples saved
+        key = "_".join([params.get("engine"), params.get("q"), params.get("check_in_date"), params.get("check_out_date"), str(params.get("adults"))])
+        results = get_search_from_cache(key)
+        if results == "":
+            search = GoogleSearch(params)
+            results = search.get_dict()
+            add_search_in_cache(key, results)
 
         if "properties" not in results or not results["properties"]:
             return f"No accommodations found in {location} for {check_in_date} to {check_out_date}."
@@ -554,7 +568,6 @@ def search_hotels(location, check_in_date, check_out_date, adults=1, currency="U
             # Add a divider between hotels for better readability
             output.append("   " + "-" * 50)
             output.append("")  # Empty line for spacing
-
         return "\n".join(output)
 
     except Exception as e:
@@ -567,6 +580,7 @@ if __name__ == "__main__":
     flight_results = search_flights("PEK", "AUS", "2025-07-24", "2025-08-12")
     print(flight_results)
 
-    # Example hotel search
+    # # Example hotel search
     # hotel_results = search_hotels("Austin TX", "2025-07-24", "2025-08-12", 2)
+    # # search_hotels(location, check_in_date, check_out_date, adults=1, currency="USD")
     # print(hotel_results)
