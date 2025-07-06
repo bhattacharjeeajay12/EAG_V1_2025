@@ -1,0 +1,22 @@
+{
+  "id": "8b5abab0336b4301ac8a5af3242f711b",
+  "timestamp": "2025-07-07T00:04:24.368606",
+  "query": "Kubernetes Kubernetes Documentation Kubernetes Blog Training Careers Partners Community ",
+  "messages": [
+    {
+      "type": "HumanMessage",
+      "content": "Kubernetes Kubernetes Documentation Kubernetes Blog Training Careers Partners Community ",
+      "has_tool_calls": false
+    },
+    {
+      "type": "AIMessage",
+      "content": "I'll help with that by using: web_search_tool",
+      "has_tool_calls": false
+    },
+    {
+      "type": "AIMessage",
+      "content": "{\n  \"urls\": [\n    \"https://example.com/error-mock-0\",\n    \"https://example.com/error-mock-1\",\n    \"https://example.com/error-mock-2\"\n  ],\n  \"contents\": [\n    \"Error encountered when searching for 'best resources for learning about Kubernetes, including documentation, blogs, training programs, career opportunities, and community engagement?'. Mock result provided.\",\n    \"Error encountered when searching for 'best resources for learning about Kubernetes, including documentation, blogs, training programs, career opportunities, and community engagement?'. Mock result provided.\",\n    \"Error encountered when searching for 'best resources for learning about Kubernetes, including documentation, blogs, training programs, career opportunities, and community engagement?'. Mock result provided.\"\n  ],\n  \"count\": 3\n}",
+      "has_tool_calls": false
+    }
+  ]
+}

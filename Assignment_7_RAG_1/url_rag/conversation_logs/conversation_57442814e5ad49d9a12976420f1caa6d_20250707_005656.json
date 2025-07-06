@@ -1,0 +1,22 @@
+{
+  "id": "57442814e5ad49d9a12976420f1caa6d",
+  "timestamp": "2025-07-07T00:56:56.664056",
+  "query": "How kubernetes in important for Deployment ?",
+  "messages": [
+    {
+      "type": "HumanMessage",
+      "content": "How kubernetes in important for Deployment ?",
+      "has_tool_calls": false
+    },
+    {
+      "type": "AIMessage",
+      "content": "I'll help with that by using: web_search_tool",
+      "has_tool_calls": false
+    },
+    {
+      "type": "AIMessage",
+      "content": "Error executing tool web_search_tool: Error executing tool web_search_tool: Error retrieving documents: name 'web_url' is not defined",
+      "has_tool_calls": false
+    }
+  ]
+}

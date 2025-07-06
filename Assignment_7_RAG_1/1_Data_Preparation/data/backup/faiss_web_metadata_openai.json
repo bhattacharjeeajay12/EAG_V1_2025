@@ -1,0 +1,822 @@
+[
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Overview | Kubernetes Overview | Kubernetes Kubernetes Documentation Kubernetes Blog Training Careers Partners Community Versions Release Information v1.33 v1.32 v1.31 v1.30 v1.29 English \u09ac\u09be\u0982\u09b2\u09be (Bengali) \u4e2d\u6587 (Chinese) Fran\u00e7ais (French) Deutsch (German) \u0939\u093f\u0928\u094d\u0926\u0940 (Hindi) Bahasa Indonesia (Indonesian) Italiano (Italian) \u65e5\u672c\u8a9e (Japanese)",
+    "chunk_id": "entry0_chunk0"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "(German) \u0939\u093f\u0928\u094d\u0926\u0940 (Hindi) Bahasa Indonesia (Indonesian) Italiano (Italian) \u65e5\u672c\u8a9e (Japanese) \ud55c\uad6d\uc5b4 (Korean) Polski (Polish) Portugu\u00eas (Portuguese) \u0420\u0443\u0441\u0441\u043a\u0438\u0439 (Russian) Espa\u00f1ol (Spanish) \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (Ukrainian) Ti\u1ebfng Vi\u1ec7t (Vietnamese) Documentation Available Documentation Versions Getting started Learning environment Production environment Container Runtimes Installing Kubernetes with",
+    "chunk_id": "entry0_chunk1"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "started Learning environment Production environment Container Runtimes Installing Kubernetes with deployment tools Bootstrapping clusters with kubeadm Installing kubeadm Troubleshooting kubeadm Creating a cluster with kubeadm Customizing components with the kubeadm API Options for Highly Available Topology Creating Highly Available Clusters",
+    "chunk_id": "entry0_chunk2"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "API Options for Highly Available Topology Creating Highly Available Clusters with kubeadm Set up a High Availability etcd Cluster with kubeadm Configuring each kubelet in your cluster using kubeadm Dual-stack support with kubeadm Turnkey Cloud Solutions Best practices Considerations for",
+    "chunk_id": "entry0_chunk3"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "support with kubeadm Turnkey Cloud Solutions Best practices Considerations for large clusters Running in multiple zones Validate node setup Enforcing Pod Security Standards PKI certificates and requirements Concepts Overview Kubernetes Components Objects In Kubernetes Kubernetes Object Management Object Names and",
+    "chunk_id": "entry0_chunk4"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Components Objects In Kubernetes Kubernetes Object Management Object Names and IDs Labels and Selectors Namespaces Annotations Field Selectors Finalizers Owners and Dependents Recommended Labels The Kubernetes API Cluster Architecture Nodes Communication between Nodes and the Control Plane Controllers Leases Cloud",
+    "chunk_id": "entry0_chunk5"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Communication between Nodes and the Control Plane Controllers Leases Cloud Controller Manager About cgroup v2 Kubernetes Self-Healing Container Runtime Interface (CRI) Garbage Collection Mixed Version Proxy Containers Images Container Environment Runtime Class Container Lifecycle Hooks Workloads Pods Pod Lifecycle Init",
+    "chunk_id": "entry0_chunk6"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Runtime Class Container Lifecycle Hooks Workloads Pods Pod Lifecycle Init Containers Sidecar Containers Ephemeral Containers Disruptions Pod Quality of Service Classes User Namespaces Downward API Workload Management Deployments ReplicaSet StatefulSets DaemonSet Jobs Automatic Cleanup for Finished Jobs CronJob ReplicationController Autoscaling",
+    "chunk_id": "entry0_chunk7"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "DaemonSet Jobs Automatic Cleanup for Finished Jobs CronJob ReplicationController Autoscaling Workloads Managing Workloads Services, Load Balancing, and Networking Service Ingress Ingress Controllers Gateway API EndpointSlices Network Policies DNS for Services and Pods IPv4/IPv6 dual-stack Topology Aware Routing Networking on Windows",
+    "chunk_id": "entry0_chunk8"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "and Pods IPv4/IPv6 dual-stack Topology Aware Routing Networking on Windows Service ClusterIP allocation Service Internal Traffic Policy Storage Volumes Persistent Volumes Projected Volumes Ephemeral Volumes Storage Classes Volume Attributes Classes Dynamic Volume Provisioning Volume Snapshots Volume Snapshot Classes CSI Volume",
+    "chunk_id": "entry0_chunk9"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Dynamic Volume Provisioning Volume Snapshots Volume Snapshot Classes CSI Volume Cloning Storage Capacity Node-specific Volume Limits Volume Health Monitoring Windows Storage Configuration Configuration Best Practices ConfigMaps Secrets Liveness, Readiness, and Startup Probes Resource Management for Pods and Containers Organizing Cluster",
+    "chunk_id": "entry0_chunk10"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Startup Probes Resource Management for Pods and Containers Organizing Cluster Access Using kubeconfig Files Resource Management for Windows nodes Security Cloud Native Security Pod Security Standards Pod Security Admission Service Accounts Pod Security Policies Security For Windows Nodes Controlling Access",
+    "chunk_id": "entry0_chunk11"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Accounts Pod Security Policies Security For Windows Nodes Controlling Access to the Kubernetes API Role Based Access Control Good Practices Good practices for Kubernetes Secrets Multi-tenancy Hardening Guide - Authentication Mechanisms Hardening Guide - Scheduler Configuration Kubernetes API Server Bypass",
+    "chunk_id": "entry0_chunk12"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Mechanisms Hardening Guide - Scheduler Configuration Kubernetes API Server Bypass Risks Linux kernel security constraints for Pods and containers Security Checklist Application Security Checklist Policies Limit Ranges Resource Quotas Process ID Limits And Reservations Node Resource Managers Scheduling, Preemption and",
+    "chunk_id": "entry0_chunk13"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "ID Limits And Reservations Node Resource Managers Scheduling, Preemption and Eviction Kubernetes Scheduler Assigning Pods to Nodes Pod Overhead Pod Scheduling Readiness Pod Topology Spread Constraints Taints and Tolerations Scheduling Framework Dynamic Resource Allocation Scheduler Performance Tuning Resource Bin Packing",
+    "chunk_id": "entry0_chunk14"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Framework Dynamic Resource Allocation Scheduler Performance Tuning Resource Bin Packing Pod Priority and Preemption Node-pressure Eviction API-initiated Eviction Cluster Administration Node Shutdowns Node Autoscaling Certificates Cluster Networking Admission Webhook Good Practices Logging Architecture Compatibility Version For Kubernetes Control Plane Components",
+    "chunk_id": "entry0_chunk15"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Practices Logging Architecture Compatibility Version For Kubernetes Control Plane Components Metrics For Kubernetes System Components Metrics for Kubernetes Object States System Logs Traces For Kubernetes System Components Proxies in Kubernetes API Priority and Fairness Installing Addons Coordinated Leader Election Windows",
+    "chunk_id": "entry0_chunk16"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "API Priority and Fairness Installing Addons Coordinated Leader Election Windows in Kubernetes Windows containers in Kubernetes Guide for Running Windows Containers in Kubernetes Extending Kubernetes Compute, Storage, and Networking Extensions Network Plugins Device Plugins Extending the Kubernetes API Custom Resources",
+    "chunk_id": "entry0_chunk17"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Network Plugins Device Plugins Extending the Kubernetes API Custom Resources Kubernetes API Aggregation Layer Operator pattern Tasks Install Tools Install and Set Up kubectl on Linux Install and Set Up kubectl on macOS Install and Set Up kubectl on Windows",
+    "chunk_id": "entry0_chunk18"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "kubectl on macOS Install and Set Up kubectl on Windows Administer a Cluster Administration with kubeadm Adding Linux worker nodes Adding Windows worker nodes Upgrading kubeadm clusters Upgrading Linux nodes Upgrading Windows nodes Configuring a cgroup driver Certificate Management with",
+    "chunk_id": "entry0_chunk19"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Upgrading Windows nodes Configuring a cgroup driver Certificate Management with kubeadm Reconfiguring a kubeadm cluster Changing The Kubernetes Package Repository Overprovision Node Capacity For A Cluster Migrating from dockershim Changing the Container Runtime on a Node from Docker Engine to",
+    "chunk_id": "entry0_chunk20"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "the Container Runtime on a Node from Docker Engine to containerd Find Out What Container Runtime is Used on a Node Troubleshooting CNI plugin-related errors Check whether dockershim removal affects you Migrating telemetry and security agents from dockershim Generate Certificates",
+    "chunk_id": "entry0_chunk21"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "you Migrating telemetry and security agents from dockershim Generate Certificates Manually Manage Memory, CPU, and API Resources Configure Default Memory Requests and Limits for a Namespace Configure Default CPU Requests and Limits for a Namespace Configure Minimum and Maximum Memory",
+    "chunk_id": "entry0_chunk22"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "and Limits for a Namespace Configure Minimum and Maximum Memory Constraints for a Namespace Configure Minimum and Maximum CPU Constraints for a Namespace Configure Memory and CPU Quotas for a Namespace Configure a Pod Quota for a Namespace Install a",
+    "chunk_id": "entry0_chunk23"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Namespace Configure a Pod Quota for a Namespace Install a Network Policy Provider Use Antrea for NetworkPolicy Use Calico for NetworkPolicy Use Cilium for NetworkPolicy Use Kube-router for NetworkPolicy Romana for NetworkPolicy Weave Net for NetworkPolicy Access Clusters Using the",
+    "chunk_id": "entry0_chunk24"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "for NetworkPolicy Weave Net for NetworkPolicy Access Clusters Using the Kubernetes API Advertise Extended Resources for a Node Autoscale the DNS Service in a Cluster Change the Access Mode of a PersistentVolume to ReadWriteOncePod Change the default StorageClass Switching from",
+    "chunk_id": "entry0_chunk25"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "a PersistentVolume to ReadWriteOncePod Change the default StorageClass Switching from Polling to CRI Event-based Updates to Container Status Change the Reclaim Policy of a PersistentVolume Cloud Controller Manager Administration Configure a kubelet image credential provider Configure Quotas for API Objects",
+    "chunk_id": "entry0_chunk26"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "a kubelet image credential provider Configure Quotas for API Objects Control CPU Management Policies on the Node Control Topology Management Policies on a node Customizing DNS Service Debugging DNS Resolution Declare Network Policy Developing Cloud Controller Manager Enable Or Disable",
+    "chunk_id": "entry0_chunk27"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Declare Network Policy Developing Cloud Controller Manager Enable Or Disable A Kubernetes API Encrypting Confidential Data at Rest Decrypt Confidential Data that is Already Encrypted at Rest Guaranteed Scheduling For Critical Add-On Pods IP Masquerade Agent User Guide Limit Storage",
+    "chunk_id": "entry0_chunk28"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Critical Add-On Pods IP Masquerade Agent User Guide Limit Storage Consumption Migrate Replicated Control Plane To Use Cloud Controller Manager Operating etcd clusters for Kubernetes Reserve Compute Resources for System Daemons Running Kubernetes Node Components as a Non-root User Safely",
+    "chunk_id": "entry0_chunk29"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Daemons Running Kubernetes Node Components as a Non-root User Safely Drain a Node Securing a Cluster Set Kubelet Parameters Via A Configuration File Share a Cluster with Namespaces Upgrade A Cluster Use Cascading Deletion in a Cluster Using a KMS",
+    "chunk_id": "entry0_chunk30"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Cluster Use Cascading Deletion in a Cluster Using a KMS provider for data encryption Using CoreDNS for Service Discovery Using NodeLocal DNSCache in Kubernetes Clusters Using sysctls in a Kubernetes Cluster Utilizing the NUMA-aware Memory Manager Verify Signed Kubernetes Artifacts",
+    "chunk_id": "entry0_chunk31"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Cluster Utilizing the NUMA-aware Memory Manager Verify Signed Kubernetes Artifacts Configure Pods and Containers Assign Memory Resources to Containers and Pods Assign CPU Resources to Containers and Pods Assign Pod-level CPU and memory resources Configure GMSA for Windows Pods and",
+    "chunk_id": "entry0_chunk32"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "CPU and memory resources Configure GMSA for Windows Pods and containers Resize CPU and Memory Resources assigned to Containers Configure RunAsUserName for Windows pods and containers Create a Windows HostProcess Pod Configure Quality of Service for Pods Assign Extended Resources",
+    "chunk_id": "entry0_chunk33"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Pod Configure Quality of Service for Pods Assign Extended Resources to a Container Configure a Pod to Use a Volume for Storage Configure a Pod to Use a PersistentVolume for Storage Configure a Pod to Use a Projected Volume for",
+    "chunk_id": "entry0_chunk34"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Storage Configure a Pod to Use a Projected Volume for Storage Configure a Security Context for a Pod or Container Configure Service Accounts for Pods Pull an Image from a Private Registry Configure Liveness, Readiness and Startup Probes Assign Pods",
+    "chunk_id": "entry0_chunk35"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Private Registry Configure Liveness, Readiness and Startup Probes Assign Pods to Nodes Assign Pods to Nodes using Node Affinity Configure Pod Initialization Attach Handlers to Container Lifecycle Events Configure a Pod to Use a ConfigMap Share Process Namespace between Containers",
+    "chunk_id": "entry0_chunk36"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Pod to Use a ConfigMap Share Process Namespace between Containers in a Pod Use a User Namespace With a Pod Use an Image Volume With a Pod Create static Pods Translate a Docker Compose File to Kubernetes Resources Enforce Pod",
+    "chunk_id": "entry0_chunk37"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Translate a Docker Compose File to Kubernetes Resources Enforce Pod Security Standards by Configuring the Built-in Admission Controller Enforce Pod Security Standards with Namespace Labels Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller Monitoring, Logging, and Debugging Troubleshooting Applications",
+    "chunk_id": "entry0_chunk38"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Built-In PodSecurity Admission Controller Monitoring, Logging, and Debugging Troubleshooting Applications Debug Pods Debug Services Debug a StatefulSet Determine the Reason for Pod Failure Debug Init Containers Debug Running Pods Get a Shell to a Running Container Troubleshooting Clusters Troubleshooting kubectl",
+    "chunk_id": "entry0_chunk39"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "a Shell to a Running Container Troubleshooting Clusters Troubleshooting kubectl Resource metrics pipeline Tools for Monitoring Resources Monitor Node Health Debugging Kubernetes nodes with crictl Auditing Debugging Kubernetes Nodes With Kubectl Developing and debugging services locally using telepresence Windows debugging",
+    "chunk_id": "entry0_chunk40"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Kubectl Developing and debugging services locally using telepresence Windows debugging tips Manage Kubernetes Objects Declarative Management of Kubernetes Objects Using Configuration Files Declarative Management of Kubernetes Objects Using Kustomize Managing Kubernetes Objects Using Imperative Commands Imperative Management of Kubernetes Objects",
+    "chunk_id": "entry0_chunk41"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Kubernetes Objects Using Imperative Commands Imperative Management of Kubernetes Objects Using Configuration Files Update API Objects in Place Using kubectl patch Migrate Kubernetes Objects Using Storage Version Migration Managing Secrets Managing Secrets using kubectl Managing Secrets using Configuration File Managing",
+    "chunk_id": "entry0_chunk42"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Managing Secrets using kubectl Managing Secrets using Configuration File Managing Secrets using Kustomize Inject Data Into Applications Define a Command and Arguments for a Container Define Dependent Environment Variables Define Environment Variables for a Container Expose Pod Infor",
+    "chunk_id": "entry0_chunk43"
+  },
+  {
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "chunk": "Environment Variables for a Container Expose Pod Infor",
+    "chunk_id": "entry0_chunk44"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "Exploring Docker for DevOps: What It Is and How It Works | Docker Docs Get Support Contact Sales Products Products Docker Desktop Containerize your applications Docker Hub Discover and share container images Docker Scout Simplify the software supply chain Docker",
+    "chunk_id": "entry1_chunk0"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "container images Docker Scout Simplify the software supply chain Docker Build Cloud Speed up your image builds Testcontainers Desktop Local testing with real dependencies Testcontainers Cloud Test without limits in the cloud Docker MCP Catalog and Toolkit Connect and manage",
+    "chunk_id": "entry1_chunk1"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "the cloud Docker MCP Catalog and Toolkit Connect and manage MCP tools Docker Hardened Images Ship with secure, enterprise-ready images Docker Desktop v4.43 Find out what\u2019s new to Docker Desktop in the latest release Read more Developers Developers Documentation Find",
+    "chunk_id": "entry1_chunk2"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "in the latest release Read more Developers Developers Documentation Find guides for Docker products Getting Started Learn the Docker basics Resources Search a library of helpful materials Training Skill up your Docker knowledge Extensions SDK Create and share your own",
+    "chunk_id": "entry1_chunk3"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "your Docker knowledge Extensions SDK Create and share your own extensions Community Connect with other Docker developers Open Source Explore open source projects Preview Program Help shape the future of Docker Customer Stories Get inspired with customer stories Get the",
+    "chunk_id": "entry1_chunk4"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "Docker Customer Stories Get inspired with customer stories Get the latest Docker news More resources for developers Introducing Docker Model Runner A faster, simpler way to run and test AI models locally Read more Deliver Quickly. Build Securely. Stay Competitive.",
+    "chunk_id": "entry1_chunk5"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "models locally Read more Deliver Quickly. Build Securely. Stay Competitive. Meet growing demands for speed and security with integrated, efficient solutions Read more Pricing Support Blog Company Company About Us Let us introduce ourselves What is a Container? Learn about",
+    "chunk_id": "entry1_chunk6"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "Let us introduce ourselves What is a Container? Learn about containerization Why Docker Discover what makes us different Trust Find our customer trust resources Partners Become a Docker partner Customer Success Learn how you can succeed with Docker Events Attend",
+    "chunk_id": "entry1_chunk7"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "Success Learn how you can succeed with Docker Events Attend live and virtual meet ups Docker Store Gear up with exclusive SWAG Careers Apply to join our team Contact Us We\u2019d love to hear from you Docker Announces SOC 2",
+    "chunk_id": "entry1_chunk8"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "We\u2019d love to hear from you Docker Announces SOC 2 Type 2 Attestation & ISO 27001 Certification Learn what this means for Docker security and compliance Read more Search Sign In Get Started Toggle menu Exploring Docker for DevOps: What",
+    "chunk_id": "entry1_chunk9"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "In Get Started Toggle menu Exploring Docker for DevOps: What It Is and How It Works Todd R. Weiss DevOps aims to dramatically improve the software development lifecycle by bringing together the formerly separated worlds of development and operations using",
+    "chunk_id": "entry1_chunk10"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "together the formerly separated worlds of development and operations using principles that strive to make software creation more efficient. DevOps practices form a useful roadmap to help developers in every phase of the development lifecycle, from code planning to building,",
+    "chunk_id": "entry1_chunk11"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "phase of the development lifecycle, from code planning to building, task automation, testing, monitoring, releasing, and deploying applications. As DevOps use continues to expand, many developers and organizations find that the Docker containerization platform integrates well as a crucial component",
+    "chunk_id": "entry1_chunk12"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "the Docker containerization platform integrates well as a crucial component of DevOps practices. Using Docker, developers have the advantage of being able to collaborate in standardized environments using local containers and remote container tools where they can write their code,",
+    "chunk_id": "entry1_chunk13"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "and remote container tools where they can write their code, share their work, and collaborate. In this blog post, we will explore the use of Docker within DevOps practices and explain how the combination can help developers create more efficient",
+    "chunk_id": "entry1_chunk14"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "explain how the combination can help developers create more efficient and powerful workflows. What is DevOps? DevOps practices are beneficial in the world of developers and code creation because they encourage smart planning, collaboration, and orderly processes and management throughout",
+    "chunk_id": "entry1_chunk15"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "encourage smart planning, collaboration, and orderly processes and management throughout the software development pipeline. Without unified DevOps principles, code is typically created in individual silos that can hamper creativity, efficient management, speed, and quality. Bringing software developers, operations teams, and",
+    "chunk_id": "entry1_chunk16"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "management, speed, and quality. Bringing software developers, operations teams, and processes together under DevOps principles, can improve both developer and organizational efficiency through increased collaboration, agility, and innovation. DevOps brings these positive changes to organizations by constantly integrating user feedback",
+    "chunk_id": "entry1_chunk17"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "these positive changes to organizations by constantly integrating user feedback regarding application features, shortcomings, and code glitches and \u2014 by making changes as needed on the fly \u2014 reducing operational and security risks in production code. CI/CD In addition to",
+    "chunk_id": "entry1_chunk18"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "and security risks in production code. CI/CD In addition to collaboration, DevOps principles are built around procedures for continuous integration/improvement (CI) and continuous deployment/delivery (CD) of code, shortening the cycle between development and production. This CI/CD approach lets teams more",
+    "chunk_id": "entry1_chunk19"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "between development and production. This CI/CD approach lets teams more quickly adapt to feedback and thus build better applications from code conception all the way through to end-user experiences. Using CI, developers can frequently and automatically integrate their changes into",
+    "chunk_id": "entry1_chunk20"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "CI, developers can frequently and automatically integrate their changes into the source code as they create new code, while the CD side tests and delivers those vetted changes to the production environment. By integrating CI/CD practices, developers can create cleaner",
+    "chunk_id": "entry1_chunk21"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "production environment. By integrating CI/CD practices, developers can create cleaner and safer code and resolve bugs ahead of production through automation, collaboration, and strong QA pipelines. What is Docker? The Docker containerization platform is a suite of tools, standards, and",
+    "chunk_id": "entry1_chunk22"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "Docker containerization platform is a suite of tools, standards, and services that enable DevOps practices for application developers. Docker is used to develop, ship, and run applications within lightweight containers. This approach allows developers to separate their applications from their",
+    "chunk_id": "entry1_chunk23"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "This approach allows developers to separate their applications from their business infrastructure, giving them the power to deliver better code more quickly. The Docker platform enables developers to package and run their application code in lightweight, local, standardized containers, which",
+    "chunk_id": "entry1_chunk24"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "run their application code in lightweight, local, standardized containers, which provide a loosely isolated environment that contains everything needed to run the application \u2014 including tools, packages, and libraries. By using Docker containers on a Docker client, developers can run",
+    "chunk_id": "entry1_chunk25"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "using Docker containers on a Docker client, developers can run an application without worrying about what is installed on the host, giving them huge flexibility, security, and collaborative advantages over virtual machines. In this controlled environment, developers can use Docker",
+    "chunk_id": "entry1_chunk26"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "virtual machines. In this controlled environment, developers can use Docker to create, monitor, and push their applications into a test environment, run automated and manual tests as needed, correct bugs, and then validate the code before deploying it for use",
+    "chunk_id": "entry1_chunk27"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "and then validate the code before deploying it for use in production. Docker also allows developers to run many containers simultaneously on a host, while allowing those same containers to be shared with others. Such a collaborative workspace can foster",
+    "chunk_id": "entry1_chunk28"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "be shared with others. Such a collaborative workspace can foster healthy and direct communications between developers, allowing development processes to become easier, more accurate, and more secure. Containers vs. virtualization Containers are an abstraction that packages application code and dependencies",
+    "chunk_id": "entry1_chunk29"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "Containers are an abstraction that packages application code and dependencies together. Instances of the container can then be created, started, stopped, moved, or deleted using the Docker API or command-line interface (CLI). Containers can be connected to one or more",
+    "chunk_id": "entry1_chunk30"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "interface (CLI). Containers can be connected to one or more networks, be attached to storage, or create new images based on their current states. Containers differ from virtual machines, which use a software abstraction layer on top of computer hardware,",
+    "chunk_id": "entry1_chunk31"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "use a software abstraction layer on top of computer hardware, allowing the hardware to be shared more efficiently in multiple instances that will run individual applications. Docker containers require fewer physical hardware resources than virtual machines, and they also offer",
+    "chunk_id": "entry1_chunk32"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "physical hardware resources than virtual machines, and they also offer faster startup times and lower overhead. This makes Docker ideal for high-velocity environments, where rapid software development cycles and scalability are crucial. Basic components of Docker The basic components of",
+    "chunk_id": "entry1_chunk33"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "are crucial. Basic components of Docker The basic components of Docker include: Docker images: Docker images are the blueprints for your containers. They are read-only templates that contain the instructions for creating a Docker container. You can think of a",
+    "chunk_id": "entry1_chunk34"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "for creating a Docker container. You can think of a container image as a snapshot of a specific state of your application. Containers: Containers are the instances of Docker images. They are lightweight and portable, encapsulating your application along with",
+    "chunk_id": "entry1_chunk35"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "They are lightweight and portable, encapsulating your application along with its dependencies. Containers can be created, started, stopped, moved, and deleted using simple Docker commands. Dockerfiles: A Dockerfile is a text document containing a series of instructions on how to",
+    "chunk_id": "entry1_chunk36"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "text document containing a series of instructions on how to build a Docker image. It includes commands for specifying the base image, copying files, installing dependencies, and setting up the environment. Docker Engine : Docker Engine is the core component",
+    "chunk_id": "entry1_chunk37"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "environment. Docker Engine : Docker Engine is the core component of Docker. It\u2019s a client-server application that includes a server with a long-running daemon process, APIs for interacting with the daemon, and a CLI client. Docker Desktop : Docker Desktop",
+    "chunk_id": "entry1_chunk38"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "daemon, and a CLI client. Docker Desktop : Docker Desktop is a commercial product sold and supported by Docker, Inc. It includes the Docker Engine and other open source components, proprietary components, and features like an intuitive GUI, synchronized file",
+    "chunk_id": "entry1_chunk39"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "proprietary components, and features like an intuitive GUI, synchronized file shares, access to cloud resources, debugging features, native host integration, governance, security features, and administrative settings management. Docker Hub: Docker Hub is a public registry where you can store and",
+    "chunk_id": "entry1_chunk40"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "Hub is a public registry where you can store and share Docker images. It serves as a central place to find official Docker images and user-contributed images. You can also use Docker Hub to automate your workflows by connecting it",
+    "chunk_id": "entry1_chunk41"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "use Docker Hub to automate your workflows by connecting it to your CI/CD pipelines. Basic Docker commands Docker commands are simple and intuitive. For example: docker run : Runs a Docker container from a specified image. For example, docker run",
+    "chunk_id": "entry1_chunk42"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "Docker container from a specified image. For example, docker run hello-world will run a container from the \u201chello-world\u201d image. docker build : Builds an image from a Dockerfile. For example, docker build -t my-app . will build an image named",
+    "chunk_id": "entry1_chunk43"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "docker build -t my-app . will build an image named \u201cmy-app\u201d from the Dockerfile in the current directory. docker pull : Pulls an image from Docker Hub. For example, docker pull nginx will download the latest NGINX image from Docker",
+    "chunk_id": "entry1_chunk44"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "pull nginx will download the latest NGINX image from Docker Hub. docker ps : Lists all running containers. For example, docker ps -a will list all containers, including stopped ones. docker stop : Stops a running Docker container. For example,",
+    "chunk_id": "entry1_chunk45"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "docker stop : Stops a running Docker container. For example, docker stop <container_id> will stop the container with the specified ID. docker rm : Removes a stopped container. For example, docker rm <container_id> will remove the container with the specified",
+    "chunk_id": "entry1_chunk46"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "docker rm <container_id> will remove the container with the specified ID. How Docker is used in DevOps One of Docker\u2019s most important benefits for developers is its critical role in facilitating CI/CD in the application development process. This makes it",
+    "chunk_id": "entry1_chunk47"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "facilitating CI/CD in the application development process. This makes it easier and more seamless for developers to work together to create better code. Docker is a build environment where developers can get predictable results building and testing their applicat",
+    "chunk_id": "entry1_chunk48"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-for-devops/",
+    "chunk": "can get predictable results building and testing their applicat",
+    "chunk_id": "entry1_chunk49"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "MLflow: A Tool for Managing the Machine Learning Lifecycle | MLflow Skip to main content ML Docs ML Docs GenAI Docs API Reference GitHub Search MLflow MLflow 3.0 Getting Started \u00f0\u009f\u009a\u0080 Machine Learning \u00f0\u009f\u00a4\u0096 Traditional ML Deep Learning \u00f0\u009f\u0095\u00b8\u00ef\u00b8\u008f Build",
+    "chunk_id": "entry2_chunk0"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "\u00f0\u009f\u009a\u0080 Machine Learning \u00f0\u009f\u00a4\u0096 Traditional ML Deep Learning \u00f0\u009f\u0095\u00b8\u00ef\u00b8\u008f Build \u00f0\u009f\u0094\u00a8 MLflow Tracking \u00f0\u009f\u0093\u0088 MLflow Model \u00f0\u009f\u00a7 MLflow Datasets \u00f0\u009f\u0097\u0083\u00ef\u00b8\u008f Evaluate \u00f0\u009f\u008e\u00af Deploy \u00f0\u009f\u009a\u00a2 Team Collaboration \u00f0\u009f\u0091\u00a5 API References More MLflow On this page MLflow: A Tool for Managing the",
+    "chunk_id": "entry2_chunk1"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "MLflow On this page MLflow: A Tool for Managing the Machine Learning Lifecycle MLflow is an open-source platform, purpose-built to assist machine learning practitioners and teams in handling the complexities of the machine learning process. MLflow focuses on the full",
+    "chunk_id": "entry2_chunk2"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "of the machine learning process. MLflow focuses on the full lifecycle for machine learning projects, ensuring that each phase is manageable, traceable, and reproducible. MLflow Getting Started Resources \u00e2\u0080\u008b If this is your first time exploring MLflow, the tutorials and",
+    "chunk_id": "entry2_chunk3"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "this is your first time exploring MLflow, the tutorials and guides here are a great place to start. The emphasis in each of these is getting you up to speed as quickly as possible with the basic functionality, terms, APIs,",
+    "chunk_id": "entry2_chunk4"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "as quickly as possible with the basic functionality, terms, APIs, and general best practices of using MLflow in order to enhance your learning in area-specific guides and tutorials. Learn about MLflow MLflow Basics MLflow Models Introduction Traditional ML Deep Learning",
+    "chunk_id": "entry2_chunk5"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "MLflow MLflow Basics MLflow Models Introduction Traditional ML Deep Learning Learn about the core components of MLflow \u00e2\u0080\u008b Quickstarts \u00e2\u0080\u008b Get Started with MLflow in our 5-minute tutorial Guides \u00e2\u0080\u008b Learn the core components of MLflow with this in-depth guide",
+    "chunk_id": "entry2_chunk6"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "Learn the core components of MLflow with this in-depth guide to Tracking Learn how to perform common tasks in MLflow \u00e2\u0080\u008b Guides \u00e2\u0080\u008b Autologging guide for effortless model tracking Model Signatures and type validation in MLflow Model Deployment Quickstart Hyperparameter",
+    "chunk_id": "entry2_chunk7"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "Signatures and type validation in MLflow Model Deployment Quickstart Hyperparameter tuning with MLflow Learn about MLflow Model-related topics \u00e2\u0080\u008b Guides \u00e2\u0080\u008b Introduction to Custom Python Models Model dependency management in MLflow Model Signatures and type validation Get started with MLflow's",
+    "chunk_id": "entry2_chunk8"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "MLflow Model Signatures and type validation Get started with MLflow's Traditional ML integrations \u00e2\u0080\u008b Quickstarts and Guides \u00e2\u0080\u008b Scikit-learn introduction with MLflow XGBoost usage with MLflow Spark ML guide Prophet Time Series Forecasting with MLflow Get started with MLflow's Deep",
+    "chunk_id": "entry2_chunk9"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "Time Series Forecasting with MLflow Get started with MLflow's Deep Learning Library integrations \u00e2\u0080\u008b Guides and Tutorials \u00e2\u0080\u008b TensorFlow PyTorch Keras spaCy for NLP workflows Traditional ML and Deep Learning with MLflow \u00e2\u0080\u008b MLflow provides comprehensive support for traditional machine",
+    "chunk_id": "entry2_chunk10"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "with MLflow \u00e2\u0080\u008b MLflow provides comprehensive support for traditional machine learning and deep learning workflows. From experiment tracking and model versioning to deployment and monitoring, MLflow streamlines every aspect of the ML lifecycle. Whether you're working with scikit-learn models, training",
+    "chunk_id": "entry2_chunk11"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "the ML lifecycle. Whether you're working with scikit-learn models, training deep neural networks, or managing complex ML pipelines, MLflow provides the tools you need to build reliable, scalable machine learning systems. Explore the core MLflow capabilities and integrations below to",
+    "chunk_id": "entry2_chunk12"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "systems. Explore the core MLflow capabilities and integrations below to enhance your ML development workflow! Tracking & Experiments Model Registry Model Deployment ML Library Integrations Model Evaluation Track experiments and manage your ML development \u00e2\u0080\u008b Core Features \u00e2\u0080\u008b MLflow Tracking",
+    "chunk_id": "entry2_chunk13"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "manage your ML development \u00e2\u0080\u008b Core Features \u00e2\u0080\u008b MLflow Tracking provides comprehensive experiment logging, parameter tracking, metrics visualization, and artifact management. Key Benefits: \u00e2\u0080\u00a2 Experiment Organization : Track and compare multiple model experiments \u00e2\u0080\u00a2 Metric Visualization : Built-in plots and",
+    "chunk_id": "entry2_chunk14"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "multiple model experiments \u00e2\u0080\u00a2 Metric Visualization : Built-in plots and charts for model performance \u00e2\u0080\u00a2 Artifact Storage : Store models, plots, and other files with each run \u00e2\u0080\u00a2 Collaboration : Share experiments and results across teams Guides \u00e2\u0080\u008b Getting Started",
+    "chunk_id": "entry2_chunk15"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "Share experiments and results across teams Guides \u00e2\u0080\u008b Getting Started with Tracking Advanced Tracking Features Autologging for Popular Libraries Manage model versions and lifecycle \u00e2\u0080\u008b Core Features \u00e2\u0080\u008b MLflow Model Registry provides centralized model versioning, stage management, and model lineage",
+    "chunk_id": "entry2_chunk16"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "Registry provides centralized model versioning, stage management, and model lineage tracking. Key Benefits: \u00e2\u0080\u00a2 Version Control : Track model versions with automatic lineage \u00e2\u0080\u00a2 Stage Management : Promote models through staging, production, and archived stages \u00e2\u0080\u00a2 Collaboration : Team-based model",
+    "chunk_id": "entry2_chunk17"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "staging, production, and archived stages \u00e2\u0080\u00a2 Collaboration : Team-based model review and approval workflows \u00e2\u0080\u00a2 Model Discovery : Search and discover models across your organization Guides \u00e2\u0080\u008b Model Registry Introduction Registering Your First Model Deploy models to production environments \u00e2\u0080\u008b",
+    "chunk_id": "entry2_chunk18"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "Registering Your First Model Deploy models to production environments \u00e2\u0080\u008b Core Features \u00e2\u0080\u008b MLflow Deployment supports multiple deployment targets including REST APIs, cloud platforms, and edge devices. Key Benefits: \u00e2\u0080\u00a2 Multiple Targets : Deploy to local servers, cloud platforms, or",
+    "chunk_id": "entry2_chunk19"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "Multiple Targets : Deploy to local servers, cloud platforms, or containerized environments \u00e2\u0080\u00a2 Model Serving : Built-in REST API serving with automatic input validation \u00e2\u0080\u00a2 Batch Inference : Support for batch scoring and offline predictions \u00e2\u0080\u00a2 Production Ready : Scalable",
+    "chunk_id": "entry2_chunk20"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "batch scoring and offline predictions \u00e2\u0080\u00a2 Production Ready : Scalable deployment options for enterprise use Guides \u00e2\u0080\u008b Model Deployment Overview Local Model Serving Cloud Deployment Options Kubernetes Deployment Explore Native MLflow ML Library Integrations \u00e2\u0080\u008b Scikit-learn XGBoost TensorFlow PyTorch Keras",
+    "chunk_id": "entry2_chunk21"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "MLflow ML Library Integrations \u00e2\u0080\u008b Scikit-learn XGBoost TensorFlow PyTorch Keras Spark MLlib Evaluate and validate your ML models \u00e2\u0080\u008b Core Features \u00e2\u0080\u008b MLflow Evaluation provides comprehensive model validation tools, automated metrics calculation, and model comparison capabilities. Key Benefits: \u00e2\u0080\u00a2 Automated",
+    "chunk_id": "entry2_chunk22"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "metrics calculation, and model comparison capabilities. Key Benefits: \u00e2\u0080\u00a2 Automated Metrics : Built-in evaluation metrics for classification, regression, and more \u00e2\u0080\u00a2 Custom Evaluators : Create custom evaluation functions for domain-specific metrics \u00e2\u0080\u00a2 Model Comparison : Compare multiple models and versions",
+    "chunk_id": "entry2_chunk23"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "metrics \u00e2\u0080\u00a2 Model Comparison : Compare multiple models and versions side-by-side \u00e2\u0080\u00a2 Validation Datasets : Track evaluation datasets and ensure reproducible results Guides \u00e2\u0080\u008b Learn how to evaluate your ML models with MLflow Discover custom evaluation metrics and functions Compare",
+    "chunk_id": "entry2_chunk24"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "models with MLflow Discover custom evaluation metrics and functions Compare models with MLflow Model Comparison Running MLflow Anywhere \u00e2\u0080\u008b MLflow can be used in a variety of environments, including your local environment, on-premises clusters, cloud platforms, and managed services. Being",
+    "chunk_id": "entry2_chunk25"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "local environment, on-premises clusters, cloud platforms, and managed services. Being an open-source platform, MLflow is vendor-neutral ; no matter where you are doing machine learning, you have access to the MLflow's core capabilities sets such as tracking, evaluation, observability, and",
+    "chunk_id": "entry2_chunk26"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "MLflow's core capabilities sets such as tracking, evaluation, observability, and more. Hosting MLflow Locally Run MLflow server locally or use direct access mode (no server required) to run MLflow in your local environment. Click the card to learn more. Databricks",
+    "chunk_id": "entry2_chunk27"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "your local environment. Click the card to learn more. Databricks Managed MLflow is a FREE, fully managed solution, seamlessly integrated with Databricks ML/AI ecosystem, such as Unity Catalog, Model Serving, and more. MLflow on Amazon SageMaker is a fully managed",
+    "chunk_id": "entry2_chunk28"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "and more. MLflow on Amazon SageMaker is a fully managed service for MLflow on AWS infrastructure,integrated with SageMaker's core capabilities such as Studio, Model Registry, and Inference. Azure Machine Learning workspaces are MLflow-compatible, allows you to use an Azure Machine",
+    "chunk_id": "entry2_chunk29"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "workspaces are MLflow-compatible, allows you to use an Azure Machine Learning workspace the same way you use an MLflow server. Nebius, a cutting-edge cloud platform for GenAI explorers, offers a fully managed service for MLflow, streamlining LLM fine-tuning with MLflow's",
+    "chunk_id": "entry2_chunk30"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "fully managed service for MLflow, streamlining LLM fine-tuning with MLflow's robust experiment tracking capabilities. You can use MLflow on your on-premise or cloud-managed Kubernetes cluster. Click this card to learn how to host MLflow on your own infrastructure. Next Getting",
+    "chunk_id": "entry2_chunk31"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "how to host MLflow on your own infrastructure. Next Getting Started with MLflow MLflow Getting Started Resources Learn about the core components of MLflow Learn how to perform common tasks in MLflow Learn about MLflow Model-related topics Get started with",
+    "chunk_id": "entry2_chunk32"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "in MLflow Learn about MLflow Model-related topics Get started with MLflow's Traditional ML integrations Get started with MLflow's Deep Learning Library integrations Traditional ML and Deep Learning with MLflow Track experiments and manage your ML development Manage model versions and",
+    "chunk_id": "entry2_chunk33"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "experiments and manage your ML development Manage model versions and lifecycle Deploy models to production environments Explore Native MLflow ML Library Integrations Evaluate and validate your ML models Running MLflow Anywhere \u00c2\u00a9 2025 MLflow Project, a Series of LF Projects,",
+    "chunk_id": "entry2_chunk34"
+  },
+  {
+    "url": "https://mlflow.org/docs/latest/ml/",
+    "chunk": "Anywhere \u00c2\u00a9 2025 MLflow Project, a Series of LF Projects, LLC. Components Releases Blog Docs Ambassador Program",
+    "chunk_id": "entry2_chunk35"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "PyTorch Skip to main content github Join us at PyTorch Conference in San Francisco, October 22-23. Register now! Hit enter to search or ESC to close Close Search search Menu Learn Get Started Tutorials Learn the Basics PyTorch Recipes Intro",
+    "chunk_id": "entry3_chunk0"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Learn Get Started Tutorials Learn the Basics PyTorch Recipes Intro to PyTorch \u2013 YouTube Series Webinars Community Landscape Join the Ecosystem Community Hub Forums Developer Resources Contributor Awards Community Events PyTorch Ambassadors Projects PyTorch vLLM DeepSpeed Host Your Project Docs",
+    "chunk_id": "entry3_chunk1"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "PyTorch Ambassadors Projects PyTorch vLLM DeepSpeed Host Your Project Docs PyTorch Domains Blog & News Blog Announcements Case Studies Events Newsletter About PyTorch Foundation Members Governing Board Technical Advisory Council Cloud Credit Program Staff Contact JOIN search Get Started Choose",
+    "chunk_id": "entry3_chunk2"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Cloud Credit Program Staff Contact JOIN search Get Started Choose Your Path: Install PyTorch Locally or Launch Instantly on Supported Cloud Platforms Get started July 2, 2025 in Blog Reducing Storage Footprint and Bandwidth Usage for Distributed Checkpoints with PyTorch",
+    "chunk_id": "entry3_chunk3"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Storage Footprint and Bandwidth Usage for Distributed Checkpoints with PyTorch DCP Summary PyTorch Distributed Checkpointing (DCP) is a versatile and powerful tool for managing model checkpoints in distributed training environments. Its modular design empowers developers to tailor its components to",
+    "chunk_id": "entry3_chunk4"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Its modular design empowers developers to tailor its components to their\u2026 Read More June 25, 2025 in Blog PyTorch + vLLM = \u2665\ufe0f Key takeaways: PyTorch and vLLM are both critical to the AI ecosystem and are increasingly being used",
+    "chunk_id": "entry3_chunk5"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "critical to the AI ecosystem and are increasingly being used together for cutting-edge generative AI applications, including inference, post-training, and agentic systems at\u2026 Read More June 25, 2025 in Blog , Ecosystem FlagGems Joins the PyTorch Ecosystem: Triton-Powered Operator Library",
+    "chunk_id": "entry3_chunk6"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": ", Ecosystem FlagGems Joins the PyTorch Ecosystem: Triton-Powered Operator Library for Universal AI Acceleration In the race to accelerate large language models across diverse AI hardware, FlagGems delivers a high-performance, flexible, and scalable solution. Built on Triton language, FlagGems is",
+    "chunk_id": "entry3_chunk7"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "flexible, and scalable solution. Built on Triton language, FlagGems is a plugin-based PyTorch operator\u2026 Read More Join PyTorch Foundation As a member of the PyTorch Foundation, you\u2019ll have access to resources that allow you to be stewards of stable, secure,",
+    "chunk_id": "entry3_chunk8"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "resources that allow you to be stewards of stable, secure, and long-lasting codebases. You can collaborate on training, local and regional events, open-source developer tooling, academic research, and guides to help new users and contributors have a productive experience. EXPLORE",
+    "chunk_id": "entry3_chunk9"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "help new users and contributors have a productive experience. EXPLORE BENEFITS Key Features & Capabilities Production Ready Transition seamlessly between eager and graph modes with TorchScript, and accelerate the path to production with TorchServe. Distributed Training Scalable distributed training and",
+    "chunk_id": "entry3_chunk10"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "to production with TorchServe. Distributed Training Scalable distributed training and performance optimization in research and production is enabled by the torch.distributed backend. Robust Ecosystem A rich ecosystem of tools and libraries extends PyTorch and supports development in computer vision, NLP",
+    "chunk_id": "entry3_chunk11"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "libraries extends PyTorch and supports development in computer vision, NLP and more. Cloud Support PyTorch is well supported on major cloud platforms, providing frictionless development and easy scaling. Install PyTorch Select your preferences and run the install command. Stable represents",
+    "chunk_id": "entry3_chunk12"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Select your preferences and run the install command. Stable represents the most currently tested and supported version of PyTorch. This should be suitable for many users. Preview is available if you want the latest, not fully tested and supported, builds",
+    "chunk_id": "entry3_chunk13"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "you want the latest, not fully tested and supported, builds that are generated nightly. Please ensure that you have met the prerequisites below (e.g., numpy) , depending on your package manager. Anaconda is our recommended package manager since it installs",
+    "chunk_id": "entry3_chunk14"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "manager. Anaconda is our recommended package manager since it installs all dependencies. You can also install previous versions of PyTorch . Note that LibTorch is only available for C++. NOTE: Latest PyTorch requires Python 3.9 or later. PyTorch Build Your",
+    "chunk_id": "entry3_chunk15"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Latest PyTorch requires Python 3.9 or later. PyTorch Build Your OS Package Language Compute Platform Run this Command: PyTorch Build Stable (2.7.0) Preview (Nightly) Your OS Linux Mac Windows Package Pip LibTorch Source Language Python C++ / Java Compute Platform",
+    "chunk_id": "entry3_chunk16"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Pip LibTorch Source Language Python C++ / Java Compute Platform CUDA 11.8 CUDA 12.6 CUDA 12.8 ROCm 6.3 CPU Run this Command: pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 Previous versions of PyTorch Quick Start With Cloud Partners Get up",
+    "chunk_id": "entry3_chunk17"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "versions of PyTorch Quick Start With Cloud Partners Get up and running with PyTorch quickly through popular cloud platforms and machine learning services. Amazon Web Services PyTorch on AWS Amazon SageMaker AWS Deep Learning Containers AWS Deep Learning AMIs Google",
+    "chunk_id": "entry3_chunk18"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "SageMaker AWS Deep Learning Containers AWS Deep Learning AMIs Google Cloud Platform Cloud Deep Learning VM Image Deep Learning Containers Microsoft Azure PyTorch on Azure Azure Machine Learning Azure Functions Lightning Studios lightning.ai Ecosystem BROWSE PROJECTS Featured Projects Explore a",
+    "chunk_id": "entry3_chunk19"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Lightning Studios lightning.ai Ecosystem BROWSE PROJECTS Featured Projects Explore a rich ecosystem of libraries, tools, and more to support development. Captum Captum (\u201ccomprehension\u201d in Latin) is an open source, extensible library for model interpretability built on PyTorch. PyTorch Geometric PyTorch",
+    "chunk_id": "entry3_chunk20"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "library for model interpretability built on PyTorch. PyTorch Geometric PyTorch Geometric is a library for deep learning on irregular input data such as graphs, point clouds, and manifolds. skorch skorch is a high-level library for PyTorch that provides full scikit-learn",
+    "chunk_id": "entry3_chunk21"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "is a high-level library for PyTorch that provides full scikit-learn compatibility. Companies & Universities Using PyTorch Amazon Advertising Reduce inference costs by 71% and scale out using PyTorch, TorchServe, and AWS Inferentia. READ CASE STUDIES Salesforce Pushing the state of",
+    "chunk_id": "entry3_chunk22"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "AWS Inferentia. READ CASE STUDIES Salesforce Pushing the state of the art in NLP and Multi-task learning. Stanford University Using PyTorch\u2019s flexibility to efficiently research new algorithmic approaches. Docs Access comprehensive developer documentation for PyTorch View Docs \u203a Tutorials Get",
+    "chunk_id": "entry3_chunk23"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "comprehensive developer documentation for PyTorch View Docs \u203a Tutorials Get in-depth tutorials for beginners and advanced developers View Tutorials \u203a Resources Find development resources and get your questions answered View Resources \u203a Stay in touch for updates, event info, and",
+    "chunk_id": "entry3_chunk24"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Resources \u203a Stay in touch for updates, event info, and the latest news By submitting this form, I consent to receive marketing emails from the LF and its projects regarding their events, training, research, developments, and related announcements. I understand",
+    "chunk_id": "entry3_chunk25"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "their events, training, research, developments, and related announcements. I understand that I can unsubscribe at any time using the links in the footers of the emails I receive. Privacy Policy . x-twitter facebook linkedin youtube github slack wechat \u00a9 2025",
+    "chunk_id": "entry3_chunk26"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": ". x-twitter facebook linkedin youtube github slack wechat \u00a9 2025 PyTorch. Copyright \u00a9 The Linux Foundation\u00ae. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For more information, including terms of use, privacy policy, and trademark usage,",
+    "chunk_id": "entry3_chunk27"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "information, including terms of use, privacy policy, and trademark usage, please see our Policies page. Trademark Usage . Privacy Policy . Close Menu Join us at PyTorch Conference in San Francisco, October 22-23. Register now! Learn Get Started Tutorials Learn",
+    "chunk_id": "entry3_chunk28"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Francisco, October 22-23. Register now! Learn Get Started Tutorials Learn the Basics PyTorch Recipes Intro to PyTorch \u2013 YouTube Series Webinars Community Landscape Join the Ecosystem Community Hub Forums Developer Resources Contributor Awards Community Events PyTorch Ambassadors Projects PyTorch vLLM",
+    "chunk_id": "entry3_chunk29"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Resources Contributor Awards Community Events PyTorch Ambassadors Projects PyTorch vLLM DeepSpeed Host Your Project Docs PyTorch Domains Blog & News Blog Announcements Case Studies Events Newsletter About PyTorch Foundation Members Governing Board Technical Advisory Council Cloud Credit Program Staff Contact",
+    "chunk_id": "entry3_chunk30"
+  },
+  {
+    "url": "https://pytorch.org/",
+    "chunk": "Governing Board Technical Advisory Council Cloud Credit Program Staff Contact JOIN github",
+    "chunk_id": "entry3_chunk31"
+  },
+  {
+    "url": "https://openai.com/index/why-our-structure-must-evolve-to-advance-our-mission/",
+    "chunk": "Enable JavaScript and cookies to continue",
+    "chunk_id": "entry4_chunk0"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "session_id": "006dd2b9c1264a128b40aacd551e3b51",
+  "timestamp": "2025-07-07T00:48:19.524465",
+  "queries_count": 1,
+  "conversations": [
+    {
+      "id": "006dd2b9c1264a128b40aacd551e3b51",
+      "query": "How kubernetes in important for Deployment ?",
+      "message_count": 3,
+      "steps_completed": 5
+    }
+  ]
+}

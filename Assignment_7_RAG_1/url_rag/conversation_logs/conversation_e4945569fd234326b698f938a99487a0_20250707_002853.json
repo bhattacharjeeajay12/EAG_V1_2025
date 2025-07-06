@@ -1,0 +1,22 @@
+{
+  "id": "e4945569fd234326b698f938a99487a0",
+  "timestamp": "2025-07-07T00:28:53.892967",
+  "query": "How kubernetes in important for Deployment ?",
+  "messages": [
+    {
+      "type": "HumanMessage",
+      "content": "How kubernetes in important for Deployment ?",
+      "has_tool_calls": false
+    },
+    {
+      "type": "AIMessage",
+      "content": "I'll help with that by using: web_search_tool",
+      "has_tool_calls": false
+    },
+    {
+      "type": "AIMessage",
+      "content": "{\n  \"urls\": [\n    \"https://kubernetes.io/docs/concepts/overview/\"\n  ],\n  \"contents\": [\n    \"support with kubeadm Turnkey Cloud Solutions Best practices Considerations for large clusters Running in multiple zones Validate node setup Enforcing Pod Security Standards PKI certificates and requir\"\n  ],\n  \"count\": 1\n}",
+      "has_tool_calls": false
+    }
+  ]
+}
